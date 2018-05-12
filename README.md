@@ -1,5 +1,5 @@
-# hausarbeit_anonym
-Vorlage für Hausarbeiten für den Studiengang Sozialinformatik an der HS Fulda
+# hausarbeit_vorlage
+## Vorlage für Hausarbeiten für den Studiengang Sozialinformatik an der HS Fulda
 
 Hier entsteht eine (hoffentlich) laufend aktuallisierte Vorlage für Hausarbeiten.
 
