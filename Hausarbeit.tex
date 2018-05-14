@@ -1,12 +1,4 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-
-\input{src/variablen}
+% Hauptdatei des Projektes. Von hier aus werden die anderen Seiten eingebunden
 \input{src/konfiguration.tex}
 
 \begin{document}
@@ -24,9 +16,18 @@
 
 % Abstand nach Absätzen
 \setlength{\parskip}{0.3cm}
-% \input{src/TEXT.tex}
-\newpage
 
+% hier wird die Datei mit dem eigentlichen Inhalt der Hausarbeit eingebunden
+\input{src/inhalt.tex}
+
+% falls man lieber eine Datei pro Kapitel bevorzug, kann man dies auch einfach realisieren, indem man diese wie folgt einbindet
+%\input{src/kapitel01.tex}
+%\input{src/kapitel02.tex}
+%\input{src/kapitel03.tex}
+% diese müssen dann natürlcih in dem Ordner vorliegen
+
+
+\newpage
 
 % nocite lässt alle Werke anzeigen, auch solche die nicht verlinkt sind.
 %\nocite{*}
@@ -34,7 +35,7 @@
 
 \newpage
 
-% Rudi will kein Abbildungsverzeichnis, ansonsten Komentierung entfernen
+% Abbildungsverzeichnis anzeigen
 \listoffigures
 \addcontentsline{toc}{section}{\listfigurename}
 
