@@ -37,14 +37,39 @@
 \widowpenalty10000
 \displaywidowpenalty=10000
 
+\usepackage{hyperxmp} % XMP-Daten fuer die PDF-Datei
 %Gimmmick: Linked Kapitel und Inhaltsverzeichnis, sowie Referenzen
-\usepackage{hyperref}
+\usepackage[pdftex, pdfa]{hyperref}
 \hypersetup{
     colorlinks,
     citecolor=black,
     filecolor=black,
     linkcolor=black,
-    urlcolor=black
+    urlcolor=black,
+    pdftitle = {\titel},
+    pdfauthor = {\vorname \nachname},
+    pdfsubject = {\untertitel},
+    pdfkeywords = {\titel \untertitel \matrikelnummer},
+    pdflang = de,
+    bookmarks = true,
+    pdfdisplaydoctitle = true,
+    colorlinks = true,
+    plainpages = false,
+    %allcolors = black,
+    hypertexnames = false,
+    pdfpagelabels = true,
+    hyperindex = true,
+    unicode = true,
+    pdfcaptionwriter = {\textsl{\vorname \nachname}},
+    pdfcontactaddress = {Eine Straße. 9},
+    pdfcontactcity = {EinOrt},
+    pdfcontactpostcode = {EinePostleitzahl},
+    pdfcontactcountry = {Deutschland},
+    pdfcontactregion = {EinBundesland},
+    pdfcontactemail = {\emailadresse},
+    pdfcontactphone = {EineTelefonnummer},
+    pdfcontacturl = {http://www.hs-fulda.de},
+    pdfmetalang = {de},
 }
 
 \usepackage{prettyref}
